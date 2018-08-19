@@ -1,12 +1,29 @@
 #header{
 	background-color: black;
 	padding: 20px;
+	text-align: center;
 }
 
 h1{
-	color: white
+	color: white;
+	font-family: arial;
 }
 
 h2{
-	color: gray
+	color: gray;
+	font-family:arial;
+}
+
+.column{
+	width: 50%;
+	height: 300px;
+	float: left;
+}
+
+#left-div{
+	background-color: red;
+}
+
+#right-div{
+	background-color: green;
 }
