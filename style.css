@@ -22,6 +22,7 @@ h2{
 #top-bar{
 	background-color: gray;
 	overflow: auto;
+	color: white;
 }
 
 .top-bar-item{
@@ -48,6 +49,11 @@ h2{
 }
 
 .sub-section-title{
+	font-size: 22px;
+	margin-bottom:5px;
+}
+
+.sub-sub-section-title{
 	font-size: 20px;
 	margin-bottom:5px;
 }
@@ -67,11 +73,10 @@ h2{
 .link-button{
 	padding:10px;
 	text-decoration: none;
-	font-family: arial;
-	color: white;
-	background-color: blue;
 	margin-right: 40px;
 	margin-left: 40px;
+	box-shadow: 1px 1px 4px 0px #888888;
+    border-radius: 5px;
 }
 
 .page-group{
@@ -106,7 +111,10 @@ h2{
 }
 
 .event{
-	height: 60px;
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 30px;
+	margin-left: 30px;
 }
 
 .event-left-part{
@@ -120,7 +128,7 @@ h2{
 }
 
 .bio-container{
-	height: 200px
+	display: inline-block;
 }
 
 .image-container{
@@ -134,5 +142,11 @@ h2{
 .bio-text{
 	width: calc(100% - 260px);
 	float: right;
-	padding:30px;
+	padding:10px;
+}
+
+#question-text{
+	color: #4f4d4d;
+	font-size: 18px;
+	margin-bottom: 20px;
 }
