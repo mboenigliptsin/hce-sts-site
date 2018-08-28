@@ -1,27 +1,29 @@
 <html>
 	<head>
 		<link type="text/css" rel="stylesheet" href="style.css">
-		<script type="text/javascript">
-
-		</script>
 	</head>
 
 	<body>
+		<script type="text/javascript">
+			var scroll = function(id){
+				var elmnt = document.getElementById(id);
+				elmnt.scrollIntoView();
+			}
+		</script>
 		<div id= "header">
 			<img id="header-image" src="HCE sticker - blue background.png">
 		</div>
 		<div id="top-bar">
-			<div class="top-bar-item"> Course Description </div>
-			<div class="top-bar-item"> Syllabus </div>
-			<div class="top-bar-item"> Events </div>
-			<div class="top-bar-item"> Bios </div>
+			<div class="top-bar-item"> <button class="topbar-button" onclick="document.getElementById('this-course-page').scrollIntoView()" class="top-bar-button">Course Description</button> </div>
+			<div class="top-bar-item"> <button class="topbar-button" onclick="document.getElementById('links-page').scrollIntoView()" class="top-bar-button">Syllabus </button></button></div>
+			<div class="top-bar-item"> <button class="topbar-button" onclick="document.getElementById('events-page').scrollIntoView()" class="top-bar-button">Events </button></div>
+			<div class="top-bar-item"> <button class="topbar-button" onclick="document.getElementById('bios-page').scrollIntoView()" class="top-bar-button">Bios </button></div>
 		</div>
 
 		<div id="page-content">
 			<div class= "page-group" id= "this-course-page">
 				<div class="content-holder" id="course-info-holder">
-					<div class="section-title"> History C182C: Human Context & Ethics of Data </div>
-					<div class="sub-section-title"> This course is offered in partnership with <a href="https://data.berkeley.edu/">the division of data science</a> </div>
+					<div class="aside-title"> History C182C/STS C100</div> <div class="section-title">Human Contexts & Ethics of Data </div>
 					<div class="text-holder">
 						<p>Data-driven services and devices have profound consequences for how we think of ourselves, relate to one other, organize collective life, and envision desirable futures. UC Berkeley's Human Contexts and Ethics of Data course prepares students to use the tools of applied historical thinking and Science, Technology, and Society (STS) to engage as knowledgeable, skillful, and responsible citizens and professionals in the varied arenas of our datafied world. </p>
 
@@ -29,9 +31,10 @@
 
 						<p>The course carries the broad, inclusive spirit of Berkeley’s Data Science curriculum into the area of human society and collective choices. It is offered in partnership with the Berkeley Division of Data Sciences. </p>
 					</div>
+					<div class="aside-title"> This course is offered in partnership with <a href="https://data.berkeley.edu/degrees/human-contexts-and-ethics" class="regular-link">the Division of Data Sciences</a> </div>
 				</div>
 				<div class="content-holder" id="question-holder">
-					<img id="question-image" src="Zuckerberg Barcelona_global social infrastructure_Reuters_Albert Gea.jpg">
+					<img id="question-image" src="zuckless.png">
 					<div class="text-holder" id="question-text">
 						What does it mean to say we live in a world of data?
 					</div>
@@ -42,7 +45,9 @@
 				<div class="content-holder" id="links_holder">
 					<div class="section-title" id="syllabus-title"> Syllabus </div>
 					<div id="links" class="text-holder">
-						<a href="/" class="link-button"> Fall 2018 </a>
+						<a href="https://docs.google.com/document/d/1ifFvS0GSptCJMpMnGElpUfp4n7lY0Ax16u4TXy-d3o0/edit?usp=sharing" class="link-button regular-link"> Fall 2018 </a>
+						<a href="https://bcourses.berkeley.edu/courses/1473404/assignments/syllabus" class="link-button regular-link"> bCourses </a>
+
 					</div>
 				</div>
 			</div>
@@ -117,7 +122,7 @@
 				</div>
 			</div>
 
-			<div class= "page-group" id= "events-page">
+			<div class= "page-group" id= "bios-page">
 				<div class="content-holder">
 					<div class="section-title"> Bios </div>
 					<div class="sub-section-title"> Instructors </div>
@@ -185,6 +190,24 @@
 						<div class="bio-text">
 							<div class="sub-sub-section-title"> Aniket Kesari </div>
 							Aniket Kesari is a fifth year doctoral student in the Jurisprudence and Social Policy PhD program at Berkeley Law, and will be a JD student at Yale Law. He specializes in law & economics and law & data science, and has research interests broadly in technology law. Specifically, he mainly works on issues surrounding privacy and cybersecurity, along with projects in digital consumer protection, smart cities, and trademark law. During graduate school, he was awarded the Google Public Policy Fellowship to work with Engine, a non-profit research and advocacy organization for startups across the country. In addition, he was awarded the Data Science for Social Good Fellowship at the University of Chicago. Prior to coming to Berkeley, he grew up in New Jersey, and graduated from Rutgers University - New Brunswick with a BA in political science and history.
+						</div>
+					</div>
+					<div class="bio-container">
+						<div class="image-container">
+							<img class="bio-image">
+						</div>
+						<div class="bio-text">
+							<div class="sub-sub-section-title"> Ari Edmundson </div>
+							Ari S. Edmundson is currently finishing his PhD in the Department of History at UC Berkeley in the field of Late Modern European Intellectual History. His dissertation, “A Selective Affinity: Contingency and the Will to System in the Early Niklas Luhmann, 1958-1973,” charts the rise of contingency semantics in postwar West German philosophy and social theory by focusing on their development within the systems theory of sociologist Niklas Luhmann (1927-1998). He is broadly interested in using alternative forms of critical social theory to reconceptualize and address the problems associated with the contemporary “datafied world.” In addition to teaching the pilot program version of “Human Contexts and Ethics of Data Science” as a GSI in the Spring of 2018, he has helped refine and develop HCE course content and pedagogy.
+						</div>
+					</div>
+					<div class="bio-container">
+						<div class="image-container">
+							<img src="IMG_1242.JPG" class="bio-image">
+						</div>
+						<div class="bio-text">
+							<div class="sub-sub-section-title"> Bailey Farren </div>
+							Bailey Farren is a fifth-year undergraduate senior majoring in Rhetoric and Cognitive Science. Her research interests rest at the intersection of ethical and technological discourses in and beyond academia. Years working with and around startups—specifically in data analytics and data-driven business models—have compelled her to participate in the types of conversations fostered by HCE, where she now plays a roll in the course administration and communication. She works directly with Margo Boenig-Liptsin and Cathryn Carson in the development of the course as well as the community and conversations around it.
 						</div>
 					</div>
 				</div>
